@@ -3,6 +3,7 @@
   margin: 0 auto;
 }
 .container.container--qa {
+  position: relative;
   padding: 60px 0;
 }
 .container.container--sm {
