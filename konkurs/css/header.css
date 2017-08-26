@@ -1,0 +1,30 @@
+.header {
+  background-image: -moz-linear-gradient(-90deg, #1a2750 0%, #235ca2 100%);
+  background-image: -webkit-linear-gradient(-90deg, #1a2750 0%, #235ca2 100%);
+  background-image: -ms-linear-gradient(-90deg, #1a2750 0%, #235ca2 100%);
+  text-align: center;
+  color: #fff;
+}
+.header .header__logo {
+  padding: 72px 0 40px;
+}
+.header .header__title {
+  font-size: 64px;
+  line-height: 74px;
+}
+.header .header__subtitle {
+  position: relative;
+  color: #0f2a4d;
+  text-align: left;
+  width: 630px;
+  margin: 80px auto 60px;
+  font-weight: 700;
+}
+.header .header__subtitle:before {
+  content: '*';
+  position: absolute;
+  left: -30px;
+  top: 15px;
+  font-size: 64px;
+  font-weight: 100;
+}

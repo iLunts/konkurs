@@ -1,0 +1,228 @@
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 300px;
+  height: 56px;
+  line-height: 56px;
+  border-radius: 100px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.btn.btn--red {
+  background-color: #d9153b;
+  box-shadow: 0px 8px 14.72px 1.28px rgba(255, 84, 108, 0.3);
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+.footer {
+  background: #f8f8f8;
+  padding: 54px 0;
+}
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+.header {
+  background-image: -moz-linear-gradient(-90deg, #1a2750 0%, #235ca2 100%);
+  background-image: -webkit-linear-gradient(-90deg, #1a2750 0%, #235ca2 100%);
+  background-image: -ms-linear-gradient(-90deg, #1a2750 0%, #235ca2 100%);
+  text-align: center;
+  color: #fff;
+}
+
+.header .header__logo {
+  padding: 72px 0 40px;
+}
+
+.header .header__title {
+  font-size: 64px;
+  line-height: 74px;
+}
+
+.header .header__subtitle {
+  position: relative;
+  color: #0f2a4d;
+  text-align: left;
+  width: 630px;
+  margin: 80px auto 60px;
+  font-weight: 700;
+}
+
+.header .header__subtitle:before {
+  content: '*';
+  position: absolute;
+  left: -30px;
+  top: 15px;
+  font-size: 64px;
+  font-weight: 100;
+}
+body {
+  background: #fff;
+  color: #333;
+  font-size: 17px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+p {
+  line-height: 24px;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+body {
+  background: #fff;
+  color: #333;
+  font-size: 17px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+p {
+  line-height: 24px;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

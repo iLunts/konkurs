@@ -1,0 +1,49 @@
+// out: css/header.css, compress: true
+// @import 'variables.less';
+// Name:            header
+// Description:     Defines styles to create layouts with main
+//
+// Component:       '.header__*'
+//                  '.header__*'
+//
+// -------------------------------------------------
+// Block '.header'
+// -------------------------------------------------
+.header{
+    background-image: -moz-linear-gradient( -90deg, rgb(26,39,80) 0%, rgb(35,92,162) 100%);
+    background-image: -webkit-linear-gradient( -90deg, rgb(26,39,80) 0%, rgb(35,92,162) 100%);
+    background-image: -ms-linear-gradient( -90deg, rgb(26,39,80) 0%, rgb(35,92,162) 100%);
+    text-align: center;
+    color: #fff;
+    
+    // Element '.header .header__logo'
+    & &__logo{
+        padding: 72px 0 40px;
+    }
+    
+    // Element '.header .header__title'
+    & &__title{
+        font-size: 64px;
+        line-height: 74px;
+    }
+        
+    // Element '.header .header__subtitle'
+    & &__subtitle{
+        position: relative;
+        color: #0f2a4d;
+        text-align: left;
+        width: 630px;
+        margin: 80px auto 60px;
+        font-weight: 700;
+
+        &:before{
+            content: '*';
+            position: absolute;
+            left: -30px;
+            top: 15px;
+            font-size: 64px;
+            font-weight: 100;
+        }
+    }
+}
+
