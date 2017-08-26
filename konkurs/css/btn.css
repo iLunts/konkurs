@@ -1,17 +1,44 @@
 .btn {
   display: inline-block;
   vertical-align: middle;
-  width: 300px;
-  height: 56px;
-  line-height: 56px;
   border-radius: 100px;
   color: #fff;
   font-weight: 700;
   text-decoration: none;
 }
+.btn + .btn {
+  margin-left: 14px;
+}
 .btn.btn--red {
   background-color: #d9153b;
   box-shadow: 0px 8px 14.72px 1.28px rgba(255, 84, 108, 0.3);
+}
+.btn.btn--lg {
+  width: 300px;
+  height: 56px;
+  line-height: 56px;
+}
+.btn.btn--social {
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  border-radius: 4px;
+  background: #ddd;
+  color: #fff;
+  fill: #fff;
+  text-align: center;
+}
+.btn.btn--social.btn--vk {
+  background: #6383a8;
+}
+.btn.btn--social.btn--youtube {
+  background: #cd201f;
+}
+.btn.btn--social.btn--facebook {
+  background: #3b5998;
+}
+.btn.btn--social.btn--ok {
+  background: #f4731c;
 }
 .link {
   text-decoration: none;
