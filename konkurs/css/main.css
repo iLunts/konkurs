@@ -11,3 +11,8 @@ hr {
   border: none;
   border-bottom: 1px solid #ddd;
 }
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}

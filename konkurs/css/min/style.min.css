@@ -19,13 +19,26 @@
   text-decoration: none;
   color: inherit;
 }
+
+.link.link--line {
+  border-bottom: 1px solid;
+}
 .footer {
   background: #f8f8f8;
   padding: 54px 0;
+  margin-top: 120px;
 }
 .container {
   width: 1110px;
   margin: 0 auto;
+}
+
+.container.container--qa {
+  padding: 60px 0;
+}
+
+.container.container--sm {
+  width: 730px;
 }
 .header {
   background-image: -moz-linear-gradient(-90deg, #1a2750 0%, #235ca2 100%);
@@ -90,6 +103,74 @@ p {
 hr {
   border: none;
   border-bottom: 1px solid #ddd;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.partner .partner__title {
+  font-size: 54px;
+  line-height: 60px;
+  font-weight: 700;
+  margin: 60px 0;
+  text-align: center;
+}
+
+.partner .partner__link {
+  display: inline-block;
+  width: 20%;
+  margin-right: -4px;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+}
+.qa .qa__title {
+  font-size: 54px;
+  line-height: 60px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.qa .qa__item + .qa__item {
+  margin-top: 60px;
+}
+
+.qa .qa__q {
+  font-size: 30px;
+  line-height: 36px;
+  color: #20508f;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.qa .qa__a + .qa__a {
+  margin-top: 30px;
+}
+.qa .qa__title {
+  font-size: 54px;
+  line-height: 60px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.qa .qa__item + .qa__item {
+  margin-top: 60px;
+}
+
+.qa .qa__q {
+  font-size: 30px;
+  line-height: 36px;
+  color: #20508f;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.qa .qa__a + .qa__a {
+  margin-top: 30px;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126

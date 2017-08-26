@@ -1,0 +1,15 @@
+.partner .partner__title {
+  font-size: 54px;
+  line-height: 60px;
+  font-weight: 700;
+  margin: 60px 0;
+  text-align: center;
+}
+.partner .partner__link {
+  display: inline-block;
+  width: 20%;
+  margin-right: -4px;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+}

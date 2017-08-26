@@ -1,0 +1,48 @@
+// out: css/qa.css, compress: true
+// @import 'variables.less';
+// Name:            qa
+// Description:     Defines styles to create layouts with qa
+//
+// Component:       '.qa__*'
+//                  '.qa__*'
+//
+// -------------------------------------------------
+// Block '.qa'
+// -------------------------------------------------
+.qa{
+
+    // Element '.qa .qa__title'
+    & &__title{
+        font-size: 54px;
+        line-height: 60px;
+        font-weight: 700;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    // Element '.qa .qa__item'
+    & &__item{
+        
+        & + .qa__item{
+            margin-top: 60px;
+        }
+    }
+
+    // Element '.qa .qa__q'
+    & &__q{
+        font-size: 30px;
+        line-height: 36px;
+        color: #20508f;
+        font-weight: 700;
+        margin-bottom: 16px;
+    }
+
+    // Element '.qa .qa__a'
+    & &__a{
+
+        & + .qa__a{
+            margin-top: 30px;
+        }
+    }
+}
+

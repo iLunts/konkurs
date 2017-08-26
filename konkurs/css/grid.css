@@ -2,3 +2,9 @@
   width: 1110px;
   margin: 0 auto;
 }
+.container.container--qa {
+  padding: 60px 0;
+}
+.container.container--sm {
+  width: 730px;
+}

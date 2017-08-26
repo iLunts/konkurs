@@ -1,0 +1,32 @@
+// out: css/partner.css, compress: true
+// @import 'variables.less';
+// Name:            partner
+// Description:     Defines styles to create layouts with partner
+//
+// Component:       '.partner__*'
+//                  '.partner__*'
+//
+// -------------------------------------------------
+// Block '.partner'
+// -------------------------------------------------
+.partner{
+
+    // Element '.partner .partner__title'
+    & &__title{
+        font-size: 54px;
+        line-height: 60px;
+        font-weight: 700;
+        margin: 60px 0;
+        text-align: center;
+    }
+
+    // Element '.partner .partner__link'
+    & &__link{
+        display: inline-block;
+        width: 20%;
+        margin-right: -4px;
+        vertical-align: middle;
+        text-align: center;
+        text-decoration: none;
+    }
+}
