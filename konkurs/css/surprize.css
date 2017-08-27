@@ -1,18 +1,64 @@
+.surprize {
+  margin-top: 135px;
+}
 .surprize .surprize__item {
+  position: relative;
   display: inline-block;
   margin: 0 40px;
   width: 250px;
   height: 145px;
-  background: #ddd;
   vertical-align: bottom;
 }
-.surprize .surprize__item.surprize__item--1 {
+.surprize .surprize__item:before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  border-radius: 100%;
+  transform: skewX(10deg);
+}
+.surprize .surprize__item.surprize__item--1:before {
+  box-shadow: 0 0 90px 50px #61D8FF;
+}
+.surprize .surprize__item.surprize__item--1 .surprize__container {
   background-image: -moz-linear-gradient(45deg, #55cbf7 0%, #8269ff 100%);
   background-image: -webkit-linear-gradient(45deg, #55cbf7 0%, #8269ff 100%);
   background-image: -ms-linear-gradient(45deg, #55cbf7 0%, #8269ff 100%);
+}
+.surprize .surprize__item.surprize__item--2:before {
+  box-shadow: 0 0 90px 50px #fff65e;
+}
+.surprize .surprize__item.surprize__item--2 .surprize__container {
+  background-image: -moz-linear-gradient(45deg, #f9a014 0%, #f9cf0e 100%);
+  background-image: -webkit-linear-gradient(45deg, #f9a014 0%, #f9cf0e 100%);
+  background-image: -ms-linear-gradient(45deg, #f9a014 0%, #f9cf0e 100%);
+}
+.surprize .surprize__item.surprize__item--3:before {
+  box-shadow: 0 0 90px 50px #ffa7c4;
+}
+.surprize .surprize__item.surprize__item--3 .surprize__container {
+  background-image: -moz-linear-gradient(45deg, #cd6de9 0%, #ea3f90 100%);
+  background-image: -webkit-linear-gradient(45deg, #cd6de9 0%, #ea3f90 100%);
+  background-image: -ms-linear-gradient(45deg, #cd6de9 0%, #ea3f90 100%);
+}
+.surprize .surprize__container {
+  position: relative;
+  height: 145px;
+  background: #ddd;
+  transform: skewX(-10deg);
+  box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.3);
+  z-index: 10;
 }
 .surprize .surprize__text {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
+  transform: skewX(10deg);
+}
+.surprize .surprize__img {
+  margin-top: -140px;
+  transform: skewX(10deg);
 }
