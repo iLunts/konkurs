@@ -14,28 +14,28 @@ var browserSync = require('browser-sync').create();
 gulp.task('default', ['less', 'minify-css'], function() {});
 
 gulp.task('minify-css', ['clean-style'], function() {
-    return gulp.src('konkurs/css/**/*.css')
+    return gulp.src('css/**/*.css')
         .pipe(concatCss('style.min.css'))
         // .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(gulp.dest('konkurs/css/min'));
+        .pipe(gulp.dest('css/min'));
 });
 
 gulp.task('less', function () {
-    return gulp.src('konkurs/less/**/*.less')
+    return gulp.src('less/**/*.less')
     .pipe(less({
       paths: [ path.join(__dirname, 'less', 'includes') ]
     }))
-        .pipe(gulp.dest('konkurs/css'));
+        .pipe(gulp.dest('css'));
 });
 
 // Watch
 gulp.task('watch', function() {
-    gulp.watch(['konkurs/less/**/*.less', 'konkurs/js/**/*.*'], ['default']);
+    gulp.watch(['less/**/*.less', 'js/**/*.*'], ['default']);
 });
 
 // Delete style
 gulp.task('clean-style', function () {
-    return gulp.src('konkurs/css/min/*.css', {read: false})
+    return gulp.src('css/min/*.css', {read: false})
     .pipe(clean());
 });
 
@@ -49,7 +49,7 @@ gulp.task('server', ['default'], function() {
         notify: false
     });
 
-    gulp.watch(['konkurs/less/**/*.less', 'konkurs/js/**/*.*'], ['default']).on('change', browserSync.reload);
+    gulp.watch(['less/**/*.less', 'js/**/*.*'], ['default']).on('change', browserSync.reload);
 });
 
 
