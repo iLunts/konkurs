@@ -9,6 +9,10 @@
 // -------------------------------------------------
 // Block ''
 // -------------------------------------------------
+html{
+    font-size: 17px;
+}
+
 body{
     background: #fff;
     color: #333;
@@ -85,6 +89,10 @@ hr{
 // Size: xSmall
 // -----------------------------------------------
 @media only screen and (min-width: 320px) and (max-width: 767px) {
+
+    html, body{
+        font-size: 15px;
+    } 
     
     // -------------------------------------------
     // Block '.container'
@@ -114,6 +122,21 @@ hr{
 // -----------------------------------------------
 // Size: Small
 // -----------------------------------------------
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-
+@media (min-width: 768px) and (max-width: 1200px) {
+    
+    .container{
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    
+    // -------------------------------------------
+    // Block '.main'
+    // -------------------------------------------
+    .main{
+    
+        .air-block{
+            display: none;
+        }
+    }
 }

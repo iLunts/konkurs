@@ -17,5 +17,10 @@
   .partner .partner__link {
     display: block;
     width: auto;
+    margin-bottom: 32px;
+  }
+  .partner .partner__title {
+    font-size: 30px;
+    margin: 50px;
   }
 }

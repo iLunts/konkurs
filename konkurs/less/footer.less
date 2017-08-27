@@ -17,14 +17,58 @@
     // Element '.footer .footer__text'
     & &__text{
         float: left;
-        width: 66.6666666%
+        width: 70%
     }
 
     // Element '.footer .footer__social'
     & &__social{
         float: left;
-        width: 33.333333%;
+        width: 30%;
         text-align: right;
         margin-top: 14px;
+    }
+}
+
+
+
+// -----------------------------------------------
+// Size: xSmall
+// -----------------------------------------------
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    
+    // -------------------------------------------
+    // Block '.footer'
+    // -------------------------------------------
+    .footer{
+        margin-top: 20px;
+        padding: 30px 0;
+
+        & &__text{
+            float: none;
+            width: 100%;
+        }
+
+        & &__social{
+            float: none;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+// -----------------------------------------------
+// Size: Small
+// -----------------------------------------------
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+    .footer{
+
+        & &__text{
+            width: 55%;
+        }
+        
+        & &__social{
+            width: 45%;
+        }
     }
 }

@@ -1,3 +1,6 @@
+html {
+  font-size: 17px;
+}
 body {
   background: #fff;
   color: #333;
@@ -54,6 +57,10 @@ hr {
   z-index: 1;
 }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
+  html,
+  body {
+    font-size: 15px;
+  }
   .container {
     width: 100%;
     padding: 0 20px;
@@ -62,6 +69,16 @@ hr {
   .container.container--sm {
     width: 100%;
     padding: 0 20px;
+  }
+  .main .air-block {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
   }
   .main .air-block {
     display: none;

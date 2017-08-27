@@ -62,6 +62,12 @@
   text-decoration: none !important;
   outline: none !important;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .btn.btn--lg {
+    width: 100%;
+  }
+}
 .footer {
   background: #f8f8f8;
   padding: 54px 0;
@@ -70,28 +76,44 @@
 
 .footer .footer__text {
   float: left;
-  width: 66.6666666%;
+  width: 70%;
 }
 
 .footer .footer__social {
   float: left;
-  width: 33.333333%;
+  width: 30%;
   text-align: right;
   margin-top: 14px;
 }
-.container {
-  width: 1110px;
-  margin: 0 auto;
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .footer {
+    margin-top: 20px;
+    padding: 30px 0;
+  }
+
+  .footer .footer__text {
+    float: none;
+    width: 100%;
+  }
+
+  .footer .footer__social {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
 }
 
-.container.container--qa {
-  position: relative;
-  padding: 60px 0;
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .footer .footer__text {
+    width: 55%;
+  }
+
+  .footer .footer__social {
+    width: 45%;
+  }
 }
 
-.container.container--sm {
-  width: 730px;
-}
 .header {
   overflow: hidden;
 }
@@ -134,6 +156,14 @@
   line-height: 74px;
 }
 
+.header .header__activity {
+  font-size: 18px;
+  line-height: 34px;
+  color: #080a22;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
 .header .header__subtitle {
   position: relative;
   color: #0f2a4d;
@@ -155,18 +185,23 @@
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .header .header__logo {
     width: 100%;
-    padding: 22px 0 40px;
-  }
-
-  .header .header__logo img {
-    width: 100%;
+    padding: 22px 0;
   }
 
   .header .header__title {
     font-size: 30px;
     line-height: 42px;
   }
+
+  .header .header__subtitle {
+    width: 80%;
+    margin: 0 auto 35px;
+  }
 }
+html {
+  font-size: 17px;
+}
+
 body {
   background: #fff;
   color: #333;
@@ -233,6 +268,11 @@ hr {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
+  html,
+  body {
+    font-size: 15px;
+  }
+
   .container {
     width: 100%;
     padding: 0 20px;
@@ -242,6 +282,18 @@ hr {
   .container.container--sm {
     width: 100%;
     padding: 0 20px;
+  }
+
+  .main .air-block {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
   }
 
   .main .air-block {
@@ -269,8 +321,18 @@ hr {
   .partner .partner__link {
     display: block;
     width: auto;
+    margin-bottom: 32px;
+  }
+
+  .partner .partner__title {
+    font-size: 30px;
+    margin: 50px;
   }
 }
+.qa {
+  margin-bottom: 60px;
+}
+
 .qa .qa__title {
   font-size: 54px;
   line-height: 60px;
@@ -293,6 +355,22 @@ hr {
 
 .qa .qa__a + .qa__a {
   margin-top: 30px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .qa .qa__title {
+    font-size: 30px;
+    margin: 45px 0 50px;
+  }
+
+  .qa .qa__q {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .qa .qa__item + .qa__item {
+    margin-top: 50px;
+  }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -383,7 +461,6 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   vertical-align: baseline;
 }
 
@@ -428,6 +505,11 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
 }
 .surprize {
   margin-top: 135px;
@@ -506,17 +588,59 @@ table {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-  .header .header__logo {
-    width: 100%;
-    padding: 22px 0 40px;
+  .surprize {
+    margin-top: 65px;
   }
 
-  .header .header__logo img {
+  .surprize .surprize__item {
     width: 100%;
+    margin: 0;
+    padding: 0 30px;
+    box-sizing: border-box;
   }
 
-  .header .header__title {
-    font-size: 30px;
-    line-height: 42px;
+  .surprize .surprize__item:before {
+    content: none;
+  }
+
+  .surprize .surprize__container {
+    height: auto;
+    padding: 15px 0 15px 40px;
+  }
+
+  .surprize .surprize__img {
+    margin: 0;
+    position: absolute;
+    left: -35px;
+    top: -55px;
+    width: 100px;
+    z-index: 1;
+  }
+
+  .surprize .surprize__text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .surprize .surprize__item {
+    width: 210px;
+    margin: 0 10px;
+  }
+
+  .surprize .surprize__text {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .surprize .surprize__item {
+    width: 210px;
+    margin: 0 10px;
+  }
+
+  .surprize .surprize__text {
+    font-size: 22px;
   }
 }

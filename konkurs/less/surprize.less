@@ -104,7 +104,37 @@
     // Block '.surprize'
     // -------------------------------------------
     .surprize{
-    
+        margin-top: 65px;
+        
+        & &__item{
+            width: 100%;
+            margin: 0;
+            padding: 0 30px;
+            box-sizing: border-box;
+
+            &:before{
+                content: none;
+            }
+        }
+
+        & &__container{
+            height: auto;
+            padding: 15px 0 15px 40px;
+        }
+
+        & &__img{
+            margin: 0;
+            position: absolute;
+            left: -35px;
+            top: -55px;
+            width: 100px;
+            z-index: 1;
+        }
+
+        & &__text{
+            font-size: 20px;
+            line-height: 24px;
+        }
     }
 }
 
@@ -113,4 +143,33 @@
 // -----------------------------------------------
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 
+    .surprize{
+
+        & &__item{
+            width: 210px;
+            margin: 0 10px;
+        }
+
+        & &__text{
+            font-size: 22px;
+        }
+    }
+}
+
+// -----------------------------------------------
+// Size: Medium
+// -----------------------------------------------
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+
+    .surprize{
+
+        & &__item{
+            width: 210px;
+            margin: 0 10px;
+        }
+
+        & &__text{
+            font-size: 22px;
+        }
+    }
 }

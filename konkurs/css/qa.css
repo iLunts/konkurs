@@ -1,3 +1,6 @@
+.qa {
+  margin-bottom: 60px;
+}
 .qa .qa__title {
   font-size: 54px;
   line-height: 60px;
@@ -17,4 +20,17 @@
 }
 .qa .qa__a + .qa__a {
   margin-top: 30px;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .qa .qa__title {
+    font-size: 30px;
+    margin: 45px 0 50px;
+  }
+  .qa .qa__q {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .qa .qa__item + .qa__item {
+    margin-top: 50px;
+  }
 }
