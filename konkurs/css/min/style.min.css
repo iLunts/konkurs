@@ -57,6 +57,11 @@
 .link.link--line {
   border-bottom: 1px solid;
 }
+
+.link.link--reset {
+  text-decoration: none !important;
+  outline: none !important;
+}
 .footer {
   background: #f8f8f8;
   padding: 54px 0;
