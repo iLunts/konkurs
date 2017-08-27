@@ -10,12 +10,37 @@
 // Block '.header'
 // -------------------------------------------------
 .header{
-    background-image: -moz-linear-gradient( -90deg, rgb(26,39,80) 0%, rgb(35,92,162) 100%);
-    background-image: -webkit-linear-gradient( -90deg, rgb(26,39,80) 0%, rgb(35,92,162) 100%);
-    background-image: -ms-linear-gradient( -90deg, rgb(26,39,80) 0%, rgb(35,92,162) 100%);
-    text-align: center;
-    color: #fff;
+    overflow: hidden;
     
+    // Element '.header .header__container'
+    & &__container{
+        position: relative;
+        background-image: -moz-linear-gradient( -90deg, rgb(26,39,80) 0%, rgb(35,92,162) 100%);
+        background-image: -webkit-linear-gradient( -90deg, rgb(26,39,80) 0%, rgb(35,92,162) 100%);
+        background-image: -ms-linear-gradient( -90deg, rgb(26,39,80) 0%, rgb(35,92,162) 100%);
+        text-align: center;
+        color: #fff;
+        margin-bottom: 100px;
+
+        &:after{
+            content: '';
+            position: absolute;
+            left: -100px;
+            right: -100px;
+            bottom: -100px;
+            height: 200px;
+            background: rgb(35,92,162);
+            border-radius: 100%;
+            z-index: -1;
+        }
+    }
+    
+    // Element '.header .header__rule'
+    & &__rule{
+        position: relative;
+        bottom: -50px;
+    }
+
     // Element '.header .header__logo'
     & &__logo{
         padding: 72px 0 40px;

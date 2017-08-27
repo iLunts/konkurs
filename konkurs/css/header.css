@@ -1,9 +1,29 @@
 .header {
+  overflow: hidden;
+}
+.header .header__container {
+  position: relative;
   background-image: -moz-linear-gradient(-90deg, #1a2750 0%, #235ca2 100%);
   background-image: -webkit-linear-gradient(-90deg, #1a2750 0%, #235ca2 100%);
   background-image: -ms-linear-gradient(-90deg, #1a2750 0%, #235ca2 100%);
   text-align: center;
   color: #fff;
+  margin-bottom: 100px;
+}
+.header .header__container:after {
+  content: '';
+  position: absolute;
+  left: -100px;
+  right: -100px;
+  bottom: -100px;
+  height: 200px;
+  background: #235ca2;
+  border-radius: 100%;
+  z-index: -1;
+}
+.header .header__rule {
+  position: relative;
+  bottom: -50px;
 }
 .header .header__logo {
   padding: 72px 0 40px;

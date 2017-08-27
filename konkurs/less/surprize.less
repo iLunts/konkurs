@@ -1,0 +1,37 @@
+// out: css/surprize.css, compress: true
+// @import 'variables.less';
+// Name:            surprize
+// Description:     Defines styles to create layouts with surprize
+//
+// Component:       '.surprize__*'
+//                  '.surprize__*'
+//
+// -------------------------------------------------
+// Block '.surprize'
+// -------------------------------------------------
+.surprize{
+    
+
+    // Element '.surprize .surprize__item'
+    & &__item{
+        display: inline-block;
+        margin: 0 40px;
+        width: 250px;
+        height: 145px;
+        background: #ddd;
+        vertical-align: bottom;
+
+        &.surprize__item--1{
+            background-image: -moz-linear-gradient( 45deg, rgb(85,203,247) 0%, rgb(130,105,255) 100%);
+            background-image: -webkit-linear-gradient( 45deg, rgb(85,203,247) 0%, rgb(130,105,255) 100%);
+            background-image: -ms-linear-gradient( 45deg, rgb(85,203,247) 0%, rgb(130,105,255) 100%);
+        }
+    }
+
+    & &__text{
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 700;
+    }
+
+}

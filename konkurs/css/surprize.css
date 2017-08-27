@@ -1,0 +1,18 @@
+.surprize .surprize__item {
+  display: inline-block;
+  margin: 0 40px;
+  width: 250px;
+  height: 145px;
+  background: #ddd;
+  vertical-align: bottom;
+}
+.surprize .surprize__item.surprize__item--1 {
+  background-image: -moz-linear-gradient(45deg, #55cbf7 0%, #8269ff 100%);
+  background-image: -webkit-linear-gradient(45deg, #55cbf7 0%, #8269ff 100%);
+  background-image: -ms-linear-gradient(45deg, #55cbf7 0%, #8269ff 100%);
+}
+.surprize .surprize__text {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
