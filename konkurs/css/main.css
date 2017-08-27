@@ -53,3 +53,17 @@ hr {
   background-image: -ms-linear-gradient(45deg, #cd6de9 0%, #ea3f90 100%);
   z-index: 1;
 }
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  .container.container--sm {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .main .air-block {
+    display: none;
+  }
+}

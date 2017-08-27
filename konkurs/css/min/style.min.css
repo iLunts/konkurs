@@ -124,6 +124,8 @@
 }
 
 .header .header__logo {
+  display: inline-block;
+  width: 522px;
   padding: 72px 0 40px;
 }
 
@@ -148,6 +150,22 @@
   top: 15px;
   font-size: 64px;
   font-weight: 100;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .header .header__logo {
+    width: 100%;
+    padding: 22px 0 40px;
+  }
+
+  .header .header__logo img {
+    width: 100%;
+  }
+
+  .header .header__title {
+    font-size: 30px;
+    line-height: 42px;
+  }
 }
 body {
   background: #fff;
@@ -213,6 +231,23 @@ hr {
   background-image: -ms-linear-gradient(45deg, #cd6de9 0%, #ea3f90 100%);
   z-index: 1;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .container.container--sm {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .main .air-block {
+    display: none;
+  }
+}
 .partner .partner__title {
   font-size: 54px;
   line-height: 60px;
@@ -228,6 +263,13 @@ hr {
   vertical-align: middle;
   text-align: center;
   text-decoration: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .partner .partner__link {
+    display: block;
+    width: auto;
+  }
 }
 .qa .qa__title {
   font-size: 54px;
@@ -461,4 +503,20 @@ table {
 .surprize .surprize__img {
   margin-top: -140px;
   transform: skewX(10deg);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .header .header__logo {
+    width: 100%;
+    padding: 22px 0 40px;
+  }
+
+  .header .header__logo img {
+    width: 100%;
+  }
+
+  .header .header__title {
+    font-size: 30px;
+    line-height: 42px;
+  }
 }
